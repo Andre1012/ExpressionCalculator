@@ -7,5 +7,10 @@
 
 import Foundation
 
-print("Hello, World!")
+let calc = ExpressionCalculator()
+let expression = "2^3^2"
+let polishReverseExpression = calc.evaluatePolishNotation(expression)
+
+print("The result of the expression \(expression) is: \(polishReverseExpression)")
+
 
